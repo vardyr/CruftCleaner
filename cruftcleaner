@@ -7,7 +7,7 @@
 #
 
 # Temporary folders to clean based on $maxage. Array in the form of: folders=( "/fsroot/folder1/" "/fsroot/folder2/" )
-folders=( "/home/vardyr/tmp/downloads/web/" )
+folders=( "/home/user/tmp/downloads/web/" )
 
 # Maximum age of files in days
 maxage="3"

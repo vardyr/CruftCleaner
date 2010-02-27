@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# CruftCleaner -- deletes files within specified folders based on a maximum age. Idea from "Mind Performance Hacks" by Ron Hale-Evans.
+#
+# $Id: cleaner,v 1.6 2010/02/27 09:09:04 vardyr Exp $
+# $Source: /home/vardyr/projects/scripts/cleaner/RCS/cleaner,v $
+#
+
+# Temporary folders to clean based on $maxage. Array in the form of: folders=( "/fsroot/folder1/" "/fsroot/folder2/" )
+folders=( "/home/vardyr/tmp/downloads/web/" )
+
+# Maximum age of files in days
+maxage="3"
+
+
+###### Configuration ends here ######
+
+# Initialize variables
+unset c
+
+# Iterate through each element in the folders() array
+for (( c=0; c<${#folders[*]}; c++ ))
+do
+
+    # Initialize variables
+    curFolder="${folders[$c]}"
+
+    echo "Cleaning ${curFolder} based on a maximum file age of ${maxage} days."
+
+    # While loop help from http://stackoverflow.com/questions/1116992/capturing-output-of-find-print0-into-a-bash-array
+    # This reads from unit 3 in order to bypass stdin so we can use commands that use stdin within our loop if needed
+    while IFS= read -r -u3 -d $'\0' file; do
+
+        # Ignore the folder we are searching within
+	if [ "$file" != "${curFolder}" ];
+	then
+
+            # For verbosity, uncomment the following statement
+            #echo "Deleting ${file}"
+
+	    rm -rf "$file"
+
+	fi
+
+    # Find all stale files and folders in the currently selected folder more than $maxage days old
+    # This outputs to unit 3 in order to bypass stdin so we can use commands that use stdin within our loop if needed
+    done 3< <(find "${curFolder}" -ctime +${maxage} -print0)
+
+done

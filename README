@@ -17,4 +17,5 @@ folders=( "/home/user/tmp/downloads/web/" )
 maxage="3"
 
 --- TODO ---
-* Finish this README
+* Finish this README. See http://github.com/guides/readme-formatting
+* Finish homepage http://vardyr.github.com/CruftCleaner/index.html

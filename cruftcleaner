@@ -2,9 +2,6 @@
 #
 # CruftCleaner -- deletes files within specified folders based on a maximum age. Idea from "Mind Performance Hacks" by Ron Hale-Evans.
 #
-# $Id: cleaner,v 1.6 2010/02/27 09:09:04 vardyr Exp $
-# $Source: /home/vardyr/projects/scripts/cleaner/RCS/cleaner,v $
-#
 
 # Temporary folders to clean based on $maxage. Array in the form of: folders=( "/fsroot/folder1/" "/fsroot/folder2/" )
 folders=( "/home/user/tmp/downloads/web/" )

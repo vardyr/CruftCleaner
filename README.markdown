@@ -1,9 +1,9 @@
 # CruftCleaner
 > A simple Bash script that deletes files and folders within specified folders based on a maximum age.
 
-Idea from "Mind Performance Hacks" by Ron Hale-Evans
-Print ISBN:    978-0-596-10153-4 | ISBN 10:    0-596-10153-8
-Ebook ISBN:    978-0-596-15311-3 | ISBN 10:    0-596-15311-2
+Idea from "Mind Performance Hacks" by Ron Hale-Evans  
+*Print ISBN:    978-0-596-10153-4 | ISBN 10:    0-596-10153-8*  
+*Ebook ISBN:    978-0-596-15311-3 | ISBN 10:    0-596-15311-2*  
 
 ## Usage
 This script is designed to be run daily as a cron job to clean a folder containing temporary files, such as web browser downloads, based on a maximum age limit.

@@ -29,13 +29,13 @@ do
     while IFS= read -r -u3 -d $'\0' file; do
 
         # Ignore the folder we are searching within
-	if [ "$file" != "${curFolder}" ];
+	if [ "${file}" != "${curFolder}" ];
 	then
 
             # For verbosity, uncomment the following statement
             #echo "Deleting ${file}"
 
-	    rm -rf "$file"
+	    rm -rf "${file}"
 
 	fi
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 ***
-Idea from "Mind Performance Hacks" by Ron Hale-Evans, "Pre-Delete Cruft" (Hack #18, p.67)
+Idea from "Mind Performance Hacks" by Ron Hale-Evans, "Pre-Delete Cruft" (Hack #18, p.67)  
 *Print ISBN:    978-0-596-10153-4 | ISBN 10:    0-596-10153-8*  
 *Ebook ISBN:    978-0-596-15311-3 | ISBN 10:    0-596-15311-2*  
 

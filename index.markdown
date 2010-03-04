@@ -9,7 +9,7 @@ Idea from "Mind Performance Hacks" by Ron Hale-Evans, "Pre-Delete Cruft" (Hack #
 ## About
 Inspired by a chapter in the book "Mind Performance Hacks" by Ron Hale-Evans entitled "Pre-Delete Cruft" (Hack #18, p.67), I began thinking of ways to pre-delete cruft.
 
-Cruft, in a general sense, is ["any accumulation of obsolete, redundant, irrelevant, or unnecessary information, especially code"](http://en.wikipedia.org/wiki/Cruft). I will leave full exploration of the reasons for pre-deleting cruft as well as how to separate the cruft from important information to the author of the book.
+Cruft, in a general sense, is "[any accumulation of obsolete, redundant, irrelevant, or unnecessary information, especially code](http://en.wikipedia.org/wiki/Cruft)." I will leave full exploration of the reasons for pre-deleting cruft as well as how to separate the cruft from important information to the author of the book.
 
 The most obvious example of cruft on a networked computer is in the form of web browser downloads. Most of the time, a user downloads a file, opens it, and never uses it again after opening it that first time. This is especially true in the case of program installers; by the time the installer is needed again, it is often outdated.
 

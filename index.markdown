@@ -25,7 +25,8 @@ This script is designed to be run daily as a cron job to clean a folder containi
 ## Configuration
 Configuration consists of two variables, one for the array containing the list of folders to clean, and a second for the maximum age of files in those folders, in days.
 
-    # Temporary folders to clean based on $maxage. Array in the form of: folders=( "/fsroot/folder1/" "/fsroot/folder2/" )
+    # Temporary folders to clean based on $maxage.
+    # 	Array in the form of: folders=( "/fsroot/folder1/" "/fsroot/folder2/" )
     folders=( "/home/user/tmp/downloads/web/" )
 
     # Maximum age of files in days

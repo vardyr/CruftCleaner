@@ -33,7 +33,7 @@ Configuration consists of two variables, one for the array containing the list o
 ## FAQ
 
 1. Why not simply use find -exec? Isn't your code too obfuscated?  
-> A. Spaces and special characters can cause problems with find -exec, and when using rm it is important to avoid these as much as possible. I would prefer a more elegant and clear solution, so please send me any tips you may have. See [Greg's BashFAQ](http://mywiki.wooledge.org/BashFAQ/020) for specifics.
+> Spaces and special characters can cause problems with find -exec, and when using rm it is vitally important to avoid such problems as much as possible. A more elegant and clear solution would be preferable, however. See [Greg's BashFAQ](http://mywiki.wooledge.org/BashFAQ/020) for specifics.
 
 ## TODO
 * Add ability to specify maximum age on a per-folder basis, defaulting to a certain value if unspecified

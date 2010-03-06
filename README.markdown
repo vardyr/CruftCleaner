@@ -30,6 +30,12 @@ Configuration consists of two variables, one for the array containing the list o
     # Maximum age of files in days
     maxage="3"
 
+## FAQ
+
+1. Why not simply use find -exec? Isn't your code too obfuscated?
+A. Spaces and special characters can cause problems with find -exec, and when using rm it is important to avoid these as much as possible. I would prefer a more elegant and clear solution, so please send me any tips you may have.  
+See [Greg's BashFAQ](http://mywiki.wooledge.org/BashFAQ/020) for specifics.
+
 ## TODO
 * Add ability to specify maximum age on a per-folder basis, defaulting to a certain value if unspecified
 * Finish this README. Add usage instructions for *nix and Mac OS X. See http://github.com/guides/readme-formatting

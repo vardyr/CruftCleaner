@@ -19,12 +19,12 @@ unset foldernum
 for (( foldernum=0; foldernum<${#folders[*]}; foldernum++ ))
 do
 
-    curFolder=${folders[$foldernum]}
+    curFolder="${folders[$foldernum]}"
 
     echo "Cleaning ${curFolder} based on a maximum file age of ${maxage} days."
 
     # Find all stale files and folders in the currently selected folder more than $maxage days old
     # Using -P just to be certain find does not follow symlinks. paranoia.
-    find -P ${curFolder} -ctime +${maxage} -delete
+    find -P "${curFolder}" -ctime +${maxage} -delete
 
 done
